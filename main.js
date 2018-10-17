@@ -29,7 +29,7 @@ function showScores() {
 function showProgress(){
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
-    element.innerHTML = "Question " + currentQuestionNumber + "of " + quiz.questions.length;
+    element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 }
 
 function guess(id, guess){
@@ -44,9 +44,13 @@ var questions = [
     new Question("What's Mike's Favorite Star Wars Movie?", ["A New Hope", "Empire Strikes Back", "Return Of the Jedi", "Phantom Menace"], "Empire Strikes Back"),
     new Question("What's Mike's best marathon time?", ["2:48", "2:53", "3:03", "3:22"], "2:48"),
     new Question("What are Mike's Siblings?", ["Only Child", "One Brother", "One Sister", "Two Sisters"], "Two Sisters"),
-    new Question("Where did Mike go to college?", ["San Jose State", "UCLA", "Chico State", "USF"], "2:48"),
-    new Question("What month was mike born in?", ["September", "Octobober", "November", "Decemeber"], "December"),
-    new Question("What instrument has Mike played for 15 years?", ["Piano", "Bass", "Violin", "Guitar"], "Guitar")
+    new Question("Where did Mike go to college?", ["San Jose State", "UCLA", "Chico State", "USF"], "San Jose State"),
+    new Question("What month was mike born in?", ["September", "Octobober", "November", "Decemeber"], "November"),
+    new Question("What instrument has Mike played for 15 years?", ["Piano", "Bass", "Violin", "Guitar"], "Guitar"),
+    new Question("What is Mike's middle name", ["Mark", "Francis", "Joseph", "He doesn't have one"], "Joseph"),
+    new Question("What was Mike's first car?", ["Honda Civic", "Mercury Sable Station Wagon", "Toyota Corola", "Ford Bronco"], "Mercury Sable Station Wagon"),
+    new Question("What was Mike's favorite band?", ["The Rolling Stones", "The Beatles", "The Eagles", "Creedence Clearwater Revival"], "The Beatles"),
+    new Question("In a second life what sport would Mike want to play?", ["Baseball", "Soccer", "Football", "Hockey"], "Hockey")
 ];
 
 var quiz = new Quiz(questions);
